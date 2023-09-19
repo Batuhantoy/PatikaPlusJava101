@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class BodyMassIndexCalculation {
+
+	public BodyMassIndexCalculation() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz : ");
+		double h = sc.nextDouble();
+		System.out.print("Lütfen kilonuzu giriniz : ");
+		int kilo = sc.nextInt();
+		sc.close();
+		double indeks = kilo /(h*h);
+		
+		System.out.print("Vücut Kitle İndeksiniz : "+indeks);
+		
+	}
+
+}
